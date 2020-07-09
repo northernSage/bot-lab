@@ -2,9 +2,9 @@ import time
 from datetime import datetime
 
 import cv2
-import numpy as np
 import mss
 import mss.tools
+import numpy as np
 from pyautogui import click, keyDown, keyUp, moveTo, press
 
 
@@ -118,26 +118,3 @@ while True:
     time.sleep(2)
     press('space', presses=2, interval=1)
     time.sleep(1)
-
-# image = cv2.imread("Large.png")
-# template = cv2.imread("small.png")
-# result = cv2.matchTemplate(image,template,cv2.TM_CCOEFF_NORMED)
-# print np.unravel_index(result.argmax(),result.shape)
-
-
-# def detection_area(self):
-#     """
-#     Checks the area for obstacles
-#     :return: float
-#     """
-#     img = np.array(self.mss.grab(self.monitor))
-
-#     image = ImageGrab.grab(self.area)
-#     gray_img = ImageOps.grayscale(image)
-#     arr = np.array(gray_img.getcolors())
-#     # print(arr.mean())
-#     return arr.mean()
-
-
-# from pyautogui import displayMousePosition
-# displayMousePosition()

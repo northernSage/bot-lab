@@ -27,4 +27,3 @@ print(clicks)
 
 for p in clicks:
     click(1450 + p.x, p.y)
-
